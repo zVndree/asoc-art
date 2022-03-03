@@ -1,0 +1,212 @@
+/*========================
+Top
+========================*/
+
+:root {
+	--primary: #c3b395;
+	--light: #eeeeee;
+	--dark: #212121;
+	--red: #eb3127;
+	--cafe_claro: #5a3f30;
+	--dark_fuente_hover: #252627;
+	--dark_fuente: #474747;
+	--blanco: #f8f5fe;
+	--gris: #74747474;
+	--gris2: #8c8377;
+}
+
+#top ul {
+	padding-top: 8px;
+}
+
+#top ul li {
+	display: inline;
+	margin: 0px 5px;
+	color: var(--blanco);
+	line-height: 30px;
+}
+
+.social ul li a i {
+	font-size: 18px;
+	margin: 0 1px;
+}
+
+.registro ul {
+	font-size: 12px;
+	text-align: right;
+}
+
+.idioma ul {
+	font-size: 12px;
+	text-align: right;
+}
+
+/*========================
+Header
+========================*/
+
+header #btn_categorias {
+	margin: 20px 0;
+}
+
+header #btn_categorias p {
+	line-height: 40px;
+	margin-bottom: 0px;
+}
+
+header #btn_categorias p:hover {
+	color: var(--cafe_claro) !important;
+}
+
+header #btn_categorias p,
+span {
+	cursor: pointer;
+}
+
+header #buscador {
+	margin: 20px 0;
+}
+
+header #buscador input {
+	padding: 19px;
+	border-radius: 0;
+}
+
+header #buscador button {
+	padding: 9px;
+	border-radius: 0;
+}
+
+header #carrito {
+	margin: 20px 0;
+}
+
+header #carrito button {
+	padding: 9px 15px;
+	border: 1px solid var(--primary);
+	border-radius: 0;
+}
+
+header #carrito p {
+	padding: 2px;
+	padding-left: 60px;
+	font-size: 12px;
+	border: 1px solid var(--primary);
+}
+
+header #categorias {
+	display: none;
+	margin-top: 10px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+header #categorias h4 {
+	margin-top: 20px;
+	margin-bottom: -10px;
+}
+
+header #categorias hr {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+ion-icon {
+	margin-top: 2px;
+	position: absolute;
+}
+
+/*========================
+Responsive Configuration
+========================*/
+
+/*---- Pantallas Grandes LG >=1366px ----*/
+
+@media (min-width: 1200px) {
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 20px 60px;
+		padding-left: 0;
+	}
+
+	header #carrito {
+		padding-left: 100px;
+	}
+}
+
+/*---- Pantallas Medianas MD >=1024px ----*/
+
+@media (max-width: 1199px) and (min-width: 992px) {
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 26px 60px;
+		padding-left: 0;
+	}
+
+	header #carrito {
+		padding-left: 70px;
+	}
+}
+
+/*---- Pantallas pequeñas SM >=768px ----*/
+
+@media (max-width: 991px) and (min-width: 768px) {
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 30px 0px;
+	}
+
+	header #carrito {
+		padding-left: 55px;
+	}
+
+	header #carrito p {
+		display: none;
+	}
+}
+
+/*---- Pantallas moviles XS <768px ----*/
+
+@media (max-width: 767px) {
+	/*========================
+	Top
+	========================*/
+
+	#top ul {
+		text-align: center;
+	}
+
+	#top,
+	.registro {
+		border-top: 1px solid var(--dark);
+	}
+	/*========================
+	Header
+	========================*/
+
+	header #logotipo img {
+		padding: 30px;
+		padding-bottom: 10px;
+	}
+
+	header #categorias {
+		margin-top: -10px;
+		margin-bottom: 10px;
+	}
+
+	header #buscador {
+		margin-bottom: 10px;
+	}
+
+	header #carrito {
+		margin: 0px;
+	}
+}
